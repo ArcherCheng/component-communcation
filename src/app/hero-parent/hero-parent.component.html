@@ -1,0 +1,4 @@
+<p>hero-parent works!</p>
+<h2>{{master}} controls {{heroes.length}} heroes</h2>
+<button (click)="addHero()">add hero</button>
+<app-hero-child *ngFor="let item of heroes" [hero]="item" [masterName]="master"></app-hero-child>

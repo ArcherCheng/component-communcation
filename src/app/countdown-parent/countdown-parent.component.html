@@ -1,0 +1,10 @@
+<p>countdown-parent works!</p>
+
+<app-countdown-timer #timer></app-countdown-timer>
+
+<button (click)="timer.start()">Start counter</button>
+<button (click)="timer.stop()">Stop counter</button>
+<div class="seconds">{{timer.seconds}}</div>
+<div>{{timer.message}}</div>
+<div>{{timer.intervalId}}</div>
+
