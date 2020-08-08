@@ -1,0 +1,30 @@
+<p>
+  modal-test works!
+</p>
+<p>
+  <button (click)="openModal('tableNo')">open modal tableNO</button>
+</p>
+<p>
+  <button (click)="openModal('peoples')">open modal peoples</button>
+</p>
+
+<app-modal-box id="tableNo">
+  <div class="modal-box">
+    <button class="clickItem" *ngFor="let item of tableNoList" (click)="clickTable(item)">
+      {{item}} 桌
+    </button>
+  </div>
+</app-modal-box>
+
+
+<app-modal-box id="peoples">
+  <div class="modal-box">
+    <button class="clickItem" *ngFor="let item of tableNoList" (click)="clickPeoples(item)">
+      {{item}} 人
+    </button>
+  </div>
+</app-modal-box>
+
+
+
+

@@ -1,0 +1,43 @@
+.app-modal-close {
+  display: block;
+}
+
+.app-modal-open {
+  display: block;
+} 
+
+.app-modal-box {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.app-modal-box .app-modal-body {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 60px;
+}
+
+.app-modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: #000;
+  opacity: 0.75;
+
+  z-index: 900;
+}
+
+body.app-modal-box-open {
+  overflow: hidden;
+}
+

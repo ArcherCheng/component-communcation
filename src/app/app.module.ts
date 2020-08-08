@@ -1,3 +1,4 @@
+import { ModalBoxComponent } from './modal/modal-box/modal-box.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,27 +15,32 @@ import { CountdownParentComponent } from './countdown-parent/countdown-parent.co
 import { CountdownParent2Component } from './countdown-parent2/countdown-parent2.component';
 import { MissionComponent } from './mission/mission.component';
 import { AstronautComponent } from './astronaut/astronaut.component';
+import { ModalTestComponent } from './modal-test/modal-test.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroChildComponent,
-    HeroParentComponent,
-    HeroChild2Component,
-    HeroParent2Component,
-    VoterComponent,
-    VoteTakerComponent,
-    CountdownTimerComponent,
-    CountdownParentComponent,
-    CountdownParent2Component,
-    MissionComponent,
-    AstronautComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      HeroChildComponent,
+      HeroParentComponent,
+      HeroChild2Component,
+      HeroParent2Component,
+      VoterComponent,
+      VoteTakerComponent,
+      CountdownTimerComponent,
+      CountdownParentComponent,
+      CountdownParent2Component,
+      MissionComponent,
+      AstronautComponent,
+      ModalTestComponent,
+      ModalBoxComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

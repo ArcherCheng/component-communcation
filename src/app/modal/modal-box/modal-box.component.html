@@ -1,0 +1,16 @@
+<div [ngClass]="{'app-modal-open': isOpen, 'app-modal-close': !isOpen}">
+  <div class="app-modal-box">
+    <div class="app-modal-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div class="app-modal-background"></div>
+</div>
+
+<!--
+<div class="app-modal-box">
+  <div class="app-modal-body">
+    <ng-content></ng-content>
+  </div>
+</div>
+<div class="app-modal-background"></div> -->
